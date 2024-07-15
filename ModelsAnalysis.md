@@ -209,3 +209,11 @@
   ![CNN_3_Loss](./assets/pictures/CNN_3_Loss.png)
   ![CNN_3_Accuracy](./assets/pictures/CNN_3_Accuracy.png)
   ![CNN_3_ConfusionMatrix](./assets/pictures/CNN_3_ConfusionMatrix.png)
+
+# 8. 训练数据为vibration/pressure/strain的EMD-LSTM模型
+- 准确率为98%,损失函数为0.0443；混淆矩阵效果好，训练中的accuracy和loss效果好
+- 依然可以改进，只对vibration做EMD降噪，pressure和strain不处理更好；
+
+ ![EMDLSTM_3_Loss](./assets/pictures/EMDLSTM_3_Loss.png)
+ ![EMDLSTM_3_Accuracy](./assets/pictures/EMDLSTM_3_Accuracy.png)
+ ![EMDLSTM_3_ConfusionMatrix](./assets/pictures/EMDLSTM_3_ConfusionMatrix.png)
