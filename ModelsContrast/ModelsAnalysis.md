@@ -11,9 +11,9 @@
 'macro': 简单地对每个类别的F1分数进行未加权平均，赋予每个类别相同的权重，不考虑它们各自的样本数。
 'weighted': 对每个类别的F1分数进行加权平均，权重是每个类别的支持度（即每个类别的样本数）。
 这可以看作是对每个类别重要性的一种度量。
-![DNN_Vibration_Loss](./assets/pictures/DNN_Vibration_Loss.png)
-![DNN_Vibration_Accuracy](./assets/pictures/DNN_Vibration_Accuracy.png)
-![DNN_Vibration_ConfusionMatrix](./assets/pictures/DNN_Vibration_ConfusionMatrix.png)
+![DNN_Vibration_Loss](../assets/pictures/DNN_Vibration_Loss.png)
+![DNN_Vibration_Accuracy](../assets/pictures/DNN_Vibration_Accuracy.png)
+![DNN_Vibration_ConfusionMatrix](../assets/pictures/DNN_Vibration_ConfusionMatrix.png)
 
 
 | Class | Precision    | Recall | F1-Score | Support |
@@ -39,9 +39,9 @@
 - loss和accuracy在训练过程中太不稳定，但accuracy幸运的达到了83%;
 - loss和accuracy在训练过程中太不稳定的原因可能是噪音太多了
 - 由混淆矩阵和F1-Score可看出除了11vector的判断准确率为54%以外其他的准确率都挺高；
-  ![LSTM_Vibration_Loss](./assets/pictures/LSTM_Vibration_Loss.png)
-  ![LSTM_Vibration_Accuracy](./assets/pictures/LSTM_Vibration_Accuracy.png)
-  ![LSTM_Vibration_ConfusionMatrix](./assets/pictures/LSTM_Vibration_ConfusionMatrix.png)
+  ![LSTM_Vibration_Loss](../assets/pictures/LSTM_Vibration_Loss.png)
+  ![LSTM_Vibration_Accuracy](../assets/pictures/LSTM_Vibration_Accuracy.png)
+  ![LSTM_Vibration_ConfusionMatrix](../assets/pictures/LSTM_Vibration_ConfusionMatrix.png)
 
 
   | Class | Precision    | Recall | F1-Score | Support |
@@ -67,9 +67,9 @@
 - loss和accuracy在训练过程中比较稳定，但accuracy却只有73%;
 - accuracy在loss和accuracy比较稳定的情况下可以通过增加训练次数来提高；(pressure序列噪音较少)
 - 由混淆矩阵和F1-Score可看出大体平均，而且7vector的准确率是100%;
-  ![LSTM_Pressure_Loss](./assets/pictures/LSTM_Pressure_Loss.png)
-  ![LSTM_Pressure_Accuracy](./assets/pictures/LSTM_Pressure_Accuracy.png)
-  ![LSTM_Pressure_ConfusionMatrix](./assets/pictures/LSTM_Pressure_ConfusionMatrix.png)
+  ![LSTM_Pressure_Loss](../assets/pictures/LSTM_Pressure_Loss.png)
+  ![LSTM_Pressure_Accuracy](../assets/pictures/LSTM_Pressure_Accuracy.png)
+  ![LSTM_Pressure_ConfusionMatrix](../assets/pictures/LSTM_Pressure_ConfusionMatrix.png)
 
 
 | Class | Precision    | Recall | F1-Score | Support |
@@ -96,9 +96,9 @@
 - 由混淆矩阵的对角线数据并未连续可知，效果非常不好；
 - 且在训练过程中60%的准确率似乎是由未降噪的数据导致的；
 
-![LSTM_Strain_Loss](./assets/pictures/LSTM_Strain_Loss.png)
-![LSTM_Strain_Accuracy](./assets/pictures/LSTM_Strain_Accuracy.png)
-![LSTM_Strain_ConfusionMatrix](./assets/pictures/LSTM_Strain_ConfusionMatrix.png)
+![LSTM_Strain_Loss](../assets/pictures/LSTM_Strain_Loss.png)
+![LSTM_Strain_Accuracy](../assets/pictures/LSTM_Strain_Accuracy.png)
+![LSTM_Strain_ConfusionMatrix](../assets/pictures/LSTM_Strain_ConfusionMatrix.png)
 
 
 | Class | Precision    | Recall | F1-Score | Support |
@@ -123,9 +123,9 @@
 
 - loss和accuracy在训练过程中较为平滑，且准确率为76%。且尚未到极限，依然可以通过增加训练次数通过准确率；
 - 由混淆矩阵和F1-Score可看出除了11vector的判断准确率为48%以外其他的准确率都挺高；
-  ![EMDLSTM_Vibration_Loss](./assets/pictures/EMDLSTM_Vibration_Loss.png)
-  ![EMDLSTM_Vibration_Accuracy](./assets/pictures/EMDLSTM_Vibration_Accuracy.png)
-  ![EMDLSTM_Vibration_ConfusionMatrix](./assets/pictures/EMDLSTM_Vibration_ConfusionMatrix.png)
+  ![EMDLSTM_Vibration_Loss](../assets/pictures/EMDLSTM_Vibration_Loss.png)
+  ![EMDLSTM_Vibration_Accuracy](../assets/pictures/EMDLSTM_Vibration_Accuracy.png)
+  ![EMDLSTM_Vibration_ConfusionMatrix](../assets/pictures/EMDLSTM_Vibration_ConfusionMatrix.png)
 
 
 | Class | Precision    | Recall | F1-Score | Support |
@@ -152,9 +152,9 @@
 - 混淆矩阵和F1-Score效果极其不好；
 - 原因是可能是是pressure序列不适应于EMD降噪，与原始的pressure序列效果相比相差太远了；
 
-![EMDLSTM_Pressure_Loss](./assets/pictures/EMDLSTM_Pressure_Loss.png)
-![EMDLSTM_Pressure_Accuracy](./assets/pictures/EMDLSTM_Pressure_Accuracy.png)
-![EMDLSTM_Pressure_ConfusionMatrix](./assets/pictures/EMDLSTM_Pressure_ConfusionMatrix.png)
+![EMDLSTM_Pressure_Loss](../assets/pictures/EMDLSTM_Pressure_Loss.png)
+![EMDLSTM_Pressure_Accuracy](../assets/pictures/EMDLSTM_Pressure_Accuracy.png)
+![EMDLSTM_Pressure_ConfusionMatrix](../assets/pictures/EMDLSTM_Pressure_ConfusionMatrix.png)
 
 
 | Class | Precision    | Recall | F1-Score | Support |
@@ -181,9 +181,9 @@
 - 准确率也从54%提升到了62%，且还未到极限；
 - strain序列的EMD降噪效果不错；
 
-  ![EMDLSTM_Strain_Loss](./assets/pictures/EMDLSTM_Strain_Loss.png)
-  ![EMDLSTM_Strain_Accuracy](./assets/pictures/EMDLSTM_Strain_Accuracy.png)
-  ![EMDLSTM_Strain_ConfusionMatrix](./assets/pictures/EMDLSTM_Strain_ConfusionMatrix.png)
+  ![EMDLSTM_Strain_Loss](../assets/pictures/EMDLSTM_Strain_Loss.png)
+  ![EMDLSTM_Strain_Accuracy](../assets/pictures/EMDLSTM_Strain_Accuracy.png)
+  ![EMDLSTM_Strain_ConfusionMatrix](../assets/pictures/EMDLSTM_Strain_ConfusionMatrix.png)
 
 
   | Class | Precision    | Recall | F1-Score | Support |
@@ -206,14 +206,14 @@
 
 # 7. 训练数据为vibration/pressure/strain的CNN模型
 - CNN的loss和accuracy效果太差了，证明vibration/pressure/strain基本上没有空间上的相关性；
-  ![CNN_3_Loss](./assets/pictures/CNN_3_Loss.png)
-  ![CNN_3_Accuracy](./assets/pictures/CNN_3_Accuracy.png)
-  ![CNN_3_ConfusionMatrix](./assets/pictures/CNN_3_ConfusionMatrix.png)
+  ![CNN_3_Loss](../assets/pictures/CNN_3_Loss.png)
+  ![CNN_3_Accuracy](../assets/pictures/CNN_3_Accuracy.png)
+  ![CNN_3_ConfusionMatrix](../assets/pictures/CNN_3_ConfusionMatrix.png)
 
 # 8. 训练数据为vibration/pressure/strain的EMD-LSTM模型
 - 准确率为98%,损失函数为0.0443；混淆矩阵效果好，训练中的accuracy和loss效果好
 - 依然可以改进，只对vibration做EMD降噪，pressure和strain不处理更好；
 
- ![EMDLSTM_3_Loss](./assets/pictures/EMDLSTM_3_Loss.png)
- ![EMDLSTM_3_Accuracy](./assets/pictures/EMDLSTM_3_Accuracy.png)
- ![EMDLSTM_3_ConfusionMatrix](./assets/pictures/EMDLSTM_3_ConfusionMatrix.png)
+ ![EMDLSTM_3_Loss](../assets/pictures/EMDLSTM_3_Loss.png)
+ ![EMDLSTM_3_Accuracy](../assets/pictures/EMDLSTM_3_Accuracy.png)
+ ![EMDLSTM_3_ConfusionMatrix](../assets/pictures/EMDLSTM_3_ConfusionMatrix.png)

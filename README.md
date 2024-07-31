@@ -1,13 +1,14 @@
 # 110SPMClassify
 
-### 1.主线逻辑
+### 1.主线
 - 目标A：Vibration,Pressure,Strain的数据分析;
 - 目标B：不同模型的效果对比;
 - 目标C：模态分解方法的效果对比;
 
-- 数据来源：1110SPM
 
 ### 2.anconda环境
+
+> 环境名：110SPMEnv;
 
 - 打包环境
 

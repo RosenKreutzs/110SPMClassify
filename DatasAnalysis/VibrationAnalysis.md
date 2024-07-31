@@ -5,10 +5,10 @@
 - 描述：12个以加速度一维序列表示的振动；
 - 分别显示,完整序列,0-5000序列,500000-550000序列,800000-810000序列；
 - 由肉眼即可看出各不同序列的不同显示图有区分性，和一定的规律性；
-  ![complete_vibration](./assets/pictures/complete_vibration.png)
-  ![5000_vibration](./assets/pictures/5000_vibration.png)
-  ![500000_vibration](./assets/pictures/500000_vibration.png)
-  ![8000000_vibration](./assets/pictures/8000000_vibration.png)
+  ![complete_vibration](../assets/pictures/complete_vibration.png)
+  ![5000_vibration](../assets/pictures/5000_vibration.png)
+  ![500000_vibration](../assets/pictures/500000_vibration.png)
+  ![8000000_vibration](../assets/pictures/8000000_vibration.png)
 
 ## 2.  绘制数据长度对样本摘的影响的曲线图¶(vibration)
 
@@ -23,7 +23,7 @@
 ## 3. 按重复度为50%，固定长度为512进行分解为小片段；(vibration)
 
 split_vibration
-![split_vibration](./assets/pictures/split_vibration.png)
+![split_vibration](../assets/pictures/split_vibration.png)
 
 ## 4. 提取统计量特征(vibration)
 
@@ -31,17 +31,17 @@ split_vibration
 
 注释：量纲，表存在不同物理量关系；有量纲特征值的数值大小常因负载，转速等条件的变化而变化， 给工程应用带来一定的困难。因此机械故障诊断中还釆用了多种无量纲指标；
 
-![mean_vibration](./assets/pictures/mean_vibration.png)
-![std_vibration](./assets/pictures/std_vibration.png)
-![median_vibration](./assets/pictures/median_vibration.png)
-![max_vibration](./assets/pictures/max_vibration.png)
-![min_vibration](./assets/pictures/min_vibration.png)
-![skew_vibration](./assets/pictures/skew_vibration.png)
-![kurt_vibration](./assets/pictures/kurt_vibration.png)
-![peak_vibration](./assets/pictures/peak_vibration.png)
-![kurtosiss_vibration](./assets/pictures/kurtosiss_vibration.png)
-![impulse_vibration](./assets/pictures/impulse_vibration.png)
-![clearance_vibration](./assets/pictures/clearance_vibration.png)
+![mean_vibration](../assets/pictures/mean_vibration.png)
+![std_vibration](../assets/pictures/std_vibration.png)
+![median_vibration](../assets/pictures/median_vibration.png)
+![max_vibration](../assets/pictures/max_vibration.png)
+![min_vibration](../assets/pictures/min_vibration.png)
+![skew_vibration](../assets/pictures/skew_vibration.png)
+![kurt_vibration](../assets/pictures/kurt_vibration.png)
+![peak_vibration](../assets/pictures/peak_vibration.png)
+![kurtosiss_vibration](../assets/pictures/kurtosiss_vibration.png)
+![impulse_vibration](../assets/pictures/impulse_vibration.png)
+![clearance_vibration](../assets/pictures/clearance_vibration.png)
 
 ## 5. 提取频域特征(vibration)
 
@@ -49,24 +49,24 @@ split_vibration
 - 相同类型的主频幅值的有两到三个范围;
 - 不同类型的主频幅值分布情况与统计量特征的均值分布基本相同；
 
-![100_fft_vibration](./assets/pictures/100_fft_vibration.png)
-![1000_fft_vibration](./assets/pictures/1000_fft_vibration.png)
-![2000_fft_vibration](./assets/pictures/2000_fft_vibration.png)
-![3000_fft_vibration](./assets/pictures/3000_fft_vibration.png)
+![100_fft_vibration](../assets/pictures/100_fft_vibration.png)
+![1000_fft_vibration](../assets/pictures/1000_fft_vibration.png)
+![2000_fft_vibration](../assets/pictures/2000_fft_vibration.png)
+![3000_fft_vibration](../assets/pictures/3000_fft_vibration.png)
 
 ## 6. 时域特征(vibration)
 
 - 由于vibration显示的都是正加速度无过零率，不算；
 - 不计算互相关性函数；
 - 自相关性函数由可知区别性不大；
-  ![100_autocorr_vibration](./assets/pictures/100_autocorr_vibration.png)
+  ![100_autocorr_vibration](../assets/pictures/100_autocorr_vibration.png)
   ![1000_autocorr_vibration](./assets/pictures/1000_autocorr_vibration.png)
-  ![2000_autocorr_vibration](./assets/pictures/2000_autocorr_vibration.png)
-  ![3000_autocorr_vibration](./assets/pictures/3000_autocorr_vibration.png)
-  ![max_autocorr_vibration](./assets/pictures/max_autocorr_vibration.png)
+  ![2000_autocorr_vibration](../assets/pictures/2000_autocorr_vibration.png)
+  ![3000_autocorr_vibration](../assets/pictures/3000_autocorr_vibration.png)
+  ![max_autocorr_vibration](../assets/pictures/max_autocorr_vibration.png)
 ## 7. 时频特征(vibration)
 
 - 使用EMD分解后去高频噪音数据(K小于0.1的IMF)后再重构；
 - 综合评价指标K为方差贡献率和相关性的组合运算结果，表IMF与原始信号的相关性和贡献度,用其确定高频噪音；
-  ![IMFs_vibration](./assets/pictures/IMFs_vibration.png)
-  ![EMD_vibration](./assets/pictures/EMD_vibration.png)
+  ![IMFs_vibration](../assets/pictures/IMFs_vibration.png)
+  ![EMD_vibration](../assets/pictures/EMD_vibration.png)
