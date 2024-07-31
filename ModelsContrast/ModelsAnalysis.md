@@ -1,5 +1,8 @@
 # 1. 训练数据为vibration的DNN模型
 
+> [相关代码；](./110spmdnnvibration.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/DNNVibration.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T112417Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=3ab46931d66f88627ae7e2225b37d8fd1677e2ba4cab48b6c78a40c1873db33438d138c7fcb9da921ecd78d063ae0fb30c56520ddfce8e9290257fd621bbc270aaf2bdfc5e66c3d235c180bbf744d3fe583eb44f826b7c4caa5fdd081fd3efe6fa7889046566d172e50861a5da9ec110fe16e1d88a45455e84576c20d235acdfea24c33192f5b3a8ef5f4ea343c2b553a387ab32e8680bac990c98563cc7fca1cb9c887ea42b92ada129d1d821b6dc88bad7f3faa51bcb8a60348f81649750c66c105294385b9e067296481c82fcc284c73786aeb9f8032ecc899d95c5285d3c34a6a3315069a10388f17572437e0864a8fbdd4888033e6512edd247fc798c77)
+
 - 使用测试集获得loss函数为1.1295，准确率为0.5921；(效果较差)
 - 混淆矩阵不堪入目；
 - 很多类别的f1-score小于40%；
@@ -36,6 +39,9 @@
 
 # 2. 训练数据为vibration的LSTM模型
 
+> [相关代码；](./110spmlstmvibration.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/LSTMVibration.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T112510Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=688ac485e4a43f0cf52002771199ba2a62a41965e21cc96e9d03579f4d79992a99d364cc70952bcf92715d3c270913d6acaf28f86c97dc571bddc8455dd3eb6c880e8b0592a267a13d52a83f9d97d881290e0801246a60899092958534cf36e8dd73932e274606f83e18b6ceff3fa584ea1615aa3abe8c21eb01e993720403bc4acb6387a149fe3a0e2339c6318142407a9ea4ac5914a228b66fa88ce316345652a11f13a03b04883f7acb48f2dbccb6280f7be8f92588e1d356842e04a76ba7d61c256c3fd164fd94861c57db35c55133200a411e2d37709ab483abee3c082299bb51062601aae7ad6b3c6f1c8b400f89abf20d69205e2e0b2b532e4510ac32)
+
 - loss和accuracy在训练过程中太不稳定，但accuracy幸运的达到了83%;
 - loss和accuracy在训练过程中太不稳定的原因可能是噪音太多了
 - 由混淆矩阵和F1-Score可看出除了11vector的判断准确率为54%以外其他的准确率都挺高；
@@ -63,6 +69,9 @@
   |       | Weighted Avg |        | 0.83     | 9542    |
 
 # 3. 训练数据为pressure的LSTM模型
+
+> [相关代码；](./110spmlstmpressure.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/LSTMPressure.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T112556Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=a5897efb83f255332616405bc124d319bd3ce1341530734ea895aee3fa17b35133c77662b57b8c3a725b2765a9df69f6b4b0efea1e003dced9306d56fb584aab6b8c8bfa5f7e2402695cd2c2413c5d4e6444bae706d471d2e4da5a284f5e00f9406e2d6f314bfaa5b923fc6de6591e74151977900cbdf14c1a6cce031af4bfc5755c10c440d967577411f2d909b35775443b50370769eba331b27f060a13489983e14a1774848366bc01a8718d48d25822d03e8e92a72d07c87355aec8ac2dbc7bc2b67cce6450a4461389b25c7fd8047810ce9e4c955460d77703dfe89cbe2144cd548999a63a77445267cb3b8f6128a4da747d206c8d92c77cb2794ca0b935)
 
 - loss和accuracy在训练过程中比较稳定，但accuracy却只有73%;
 - accuracy在loss和accuracy比较稳定的情况下可以通过增加训练次数来提高；(pressure序列噪音较少)
@@ -92,6 +101,8 @@
 
 # 4. 训练数据为strain的LSTM模型
 
+> [相关代码；](./110spmlstmstrain.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/LSTMStrain.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T111928Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=7dfd48eaf64e8818b9ee0c416cc658c6777f2cd0400d8bfe41ff13b62e0a7560fb3680961dc07c786bc3090e65afe28c3071cd62f67c4672bd74239e13d082c0895a8f0cf31aa0190f84b8a24c691048db35dba514a90189ccfafb11f72c49f23b359d3199a91ea2bd0f9d537f4d3468b9c1f6cda73ff43ef5d81da15c5be9717ee4279b5f1ee1a190c4f5a6bff7adbb705139a4dd84cbaf2927e4db0a475acf4f7abc66c456d65da88d39e503c1a8dd23d7bd70f227d9a82128b87767abe670c69de9ab89980475f0f423dc8a69e48d18a473b49ca4bf5a91acebd06eab1d7ff97d5f7fed6e18d51b3016b0b01ee4d2e151cf9814a980a95bc4ed04c6c74405)
 - loss和accuracy在训练过程中局部波动大,且accuracy只有58%;
 - 由混淆矩阵的对角线数据并未连续可知，效果非常不好；
 - 且在训练过程中60%的准确率似乎是由未降噪的数据导致的；
@@ -121,6 +132,10 @@
 
 # 5. 训练数据为vibration的EMD-LSTM模型
 
+> [相关代码；](./110spmemdlstmvibration.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/EMDLSTMVibration.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T095720Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=b0454998f3d5e98e4e9b1f7bbece7d809621d56012671fa80e78a53a1a0941272f1b800210cea4139a40db4c53f18bc38f347610b6e18a7e185bfdfebf35bbfd4b1da0c87659f96d1cd4bd8e98ed2edb9eb4a565e1c8b40e03b008cdf91bb35e0626a930037ad35c62edf36047e15b0439b34f563776df80defb660ac68126433a949a1a89daebc6a3867694b9868f9cce5358dab59c1623705086d147e027c98a8983d5f8ab0b677d1387903aec6a2d30fe698d55e8d7b4c016aa113bd45579ee36a6c2f529012938685301be570a599f84af9c3bbb66030136fe6fb48588e9d1cae1ec2e6ca733152368c62ccf7b419d4eae77de3540a99bcac6f0f63f68c6)
+
+
 - loss和accuracy在训练过程中较为平滑，且准确率为76%。且尚未到极限，依然可以通过增加训练次数通过准确率；
 - 由混淆矩阵和F1-Score可看出除了11vector的判断准确率为48%以外其他的准确率都挺高；
   ![EMDLSTM_Vibration_Loss](../assets/pictures/EMDLSTM_Vibration_Loss.png)
@@ -147,6 +162,10 @@
 |       | Weighted Avg |        | 0.76     | 9542    |
 
 # 6. 训练数据为pressure的EMD-LSTM模型
+
+> [相关代码；](./110spmemdlstmpressure.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/EMDLSTMPressure.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T100120Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=2d927d78b80b5f1e25c685a038c0692710c77b4394e1c90e9599918a5ec812bbb4a9db4632584898b7933d770834eef8d251dcc0ca0b03e00f7620abfc985c6e602b9375c16f773f79b95566bcf5d2684740b0c772248455304dd4cbe83ec1422a8fc5e7f27cebd7da403f21c8431033cca113997e41190138d1571a2860d8e56fade576907820efd6772906a6aa070ffdefcac95f443aac7bac363f657c44e37e6662f18c3e7c81348a878f89b9ca0447f08efdb8f93c4571f5d8cfe67f1d0033f842feb8bfec2081ac51b8422f5fd41a2829f7be1a3ef602768d9ddadd08716e713cb7d20c3fac715b4d381094e7523849c386a97a3287974b5fc5b7187531)
+
 
 - loss和accuracy在训练过程中不仅波动大，而且准确率巨低29%；
 - 混淆矩阵和F1-Score效果极其不好；
@@ -176,6 +195,8 @@
 |       | Weighted Avg |        | 0.26     | 9542    |
 
 # 7. 训练数据为strain的EMD-LSTM模型
+> [相关代码；](./110spmemdlstmstrain.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/EMDLSTMStrain.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T100245Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=9fdf8cfbcab4622349b8406e019b6672f6c66754d9ef021ff839858e88938ebcb19e1aa0406528bae7ac8ec9b0ce90a3e419393c9a3d84e3d2ee19a753b53f46e5a5c68597554f18abc83e05250c1ab72e0976ea8a63e716ccd6e5f45fa896ac4035fa42f9cf7a43331fc5eeda38cf9661f28b70e429bafaa6a77c78fd688f8f8a860c19c5199c5e542fdeb1bf03ca7bb334abf1a0850044e81e8653ccaa71890f043ea20c72de90dcaff32f358b26919a824866726224fc55137500bc360264c63a1b65386a914f936735c6427b564feb01ed6b30831982304377fa6d97cd75e90a49e9864b246bcc71d5e5fdddeb3f725d325363fc9f0d4ec99f0486d1de55)
 
 - loss和accuracy在训练过程中大体稳定但局部波动大，但之前相较于原始数据而已比较Loss与Accuracy的变化过程相对稳定；
 - 准确率也从54%提升到了62%，且还未到极限；
@@ -205,12 +226,20 @@
   |       | Weighted Avg |        | 0.63     | 9542    |
 
 # 7. 训练数据为vibration/pressure/strain的CNN模型
+
+> [相关代码；](./110spm3emdcnn.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/EMDCNN3.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T095418Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=afb6ea5d887792613ac93a5ae61127b02f65abf15c351ebcf3caa40710035a039c662a4bca9835e6a24120248d9af1634318df505f04efd1901172e37bfbbd5be9c2e573087aa212487a93a1309fc8d733c296294447992ae889d46f48982451ae6f753d4de414c6ed723815505f8bd7c862613161f7d4eb835f391fac97becd54f7047f9320a0e024340bce05d7417d5e7e41db4ec3987ba86b661485af280b3f740c568b3022ff46d3daccd453df14eb909bb08d86bebd4cd6af2478a24c9238894d8bff4bb5485d0ca303a18ad26e72012a45dede359cb3251f4b71892483672cbb367b544cf63f225c14190c3d9e7ee4c9b91bb16c026188e2a5c9f847b4)
+
 - CNN的loss和accuracy效果太差了，证明vibration/pressure/strain基本上没有空间上的相关性；
   ![CNN_3_Loss](../assets/pictures/CNN_3_Loss.png)
   ![CNN_3_Accuracy](../assets/pictures/CNN_3_Accuracy.png)
   ![CNN_3_ConfusionMatrix](../assets/pictures/CNN_3_ConfusionMatrix.png)
 
 # 8. 训练数据为vibration/pressure/strain的EMD-LSTM模型
+
+> [相关代码；](./110spm3emdlstm.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/85876/EMDLSTM3.h5?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240731T112716Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=9ce83150ddfa64e6049c127fd9e2135db129be2f0ef0bf4ba60f643e3a558c62deb04c8e1b744362bc95485a552dda3ee49c6ec3cc017c3761727de7100ac588752fa703fb688d4ca684fca63b35c450539cb00fde2a933ee21a46fc12dd940d591b4fe239f75035da56147103eedb7aa5ba9d14df5dbe1496b89774c2237ce3457645536bd38e072faf1837b2478ba65f9ede1e4c82dc497badd22e984504e3399b8d3ef39eb81babe58c80e6a99349c5fa5d847ce9a28c24b699467a40e35dfdb58289efe4a24a8620afe55e7c2216cd87abc78fbdd833fe3fc338819fcecd8f1ea31348b0d6cde1f3d471b3ce43c2a1de3316e5be6307b4d8b587d3f82327)
+
 - 准确率为98%,损失函数为0.0443；混淆矩阵效果好，训练中的accuracy和loss效果好
 - 依然可以改进，只对vibration做EMD降噪，pressure和strain不处理更好；
 
