@@ -246,3 +246,19 @@
  ![EMDLSTM_3_Loss](../assets/pictures/EMDLSTM_3_Loss.png)
  ![EMDLSTM_3_Accuracy](../assets/pictures/EMDLSTM_3_Accuracy.png)
  ![EMDLSTM_3_ConfusionMatrix](../assets/pictures/EMDLSTM_3_ConfusionMatrix.png)
+
+ # 9. 训练数据为vibration/pressure/strain的DWTCNN-LSTM模型
+
+> [相关代码；](./110spmdwtcnnlstm.ipynb)
+> [模型下载；](https://storage.googleapis.com/kagglesdsdata/models/72145/91098/DWTCNNLSTM.pth?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20240808%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240808T070347Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=0f1a4bfb336ac3bdcf86280b86635deada25a25fb74a287e1beb849dabab18c20497bba079a2e0f0541f0ab24b20308cfa740caceea023164250319429405486858f34036bf71fe6044d2651dc643081d160e8ee26d24bb22f8be4d9f47b329ebb8264a26805710ae665f8e5f127cd2cc08468277f40b9730c1671e1f6d58471e8055afe5a1d88faab2fd576398d928c9fbb1fd6d3596aafeaf0023e2135dd8b233f08666a74542ead39c46679d9dd3ebbef508fdf3096eb7be0627c4233ce9877266534592807ebce5d31086c88a4117aac4da4af2995b31787af537e006d74e81d6eda427c66182ed7805c53c47b998609bad5d83374d04a05f92a54bfe582)
+
+- 准确率为88.5%,损失函数为(0.31；混淆矩阵效果好，训练中的accuracy以及接近瓶颈和loss波动太多了。
+
+- 依然可以改进:
+- - DWTCNN中只使用了高通滤波器和低通滤波器作为了卷积核，存在滤波器的窗口太小增加估计频率的不确定性；
+- - 同时未更精细化判别噪音，运用更适合的滤波器(如陷波滤波器等)；
+- - 可增加DWTCNN的降采样的迭代次数提取更多信息；
+
+ ![DWTCNNLSTM_Strain_Loss](../assets/pictures/DWTCNNLSTM_Strain_Loss.png)
+ ![DWTCNNLSTM_Strain_Accuracy](../assets/pictures/DWTCNNLSTM_Strain_Accuracy.png)
+ ![DWTCNNLSTM_Strain_ConfusionMatrix](../assets/pictures/DWTCNNLSTM_Strain_ConfusionMatrix.png)

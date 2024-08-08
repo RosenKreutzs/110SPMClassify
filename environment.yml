@@ -1,5 +1,6 @@
-name: 110SPMenv
+name: 110SPMEnv
 channels:
+  - pytorch
   - defaults
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -27,14 +28,17 @@ dependencies:
   - colorama=0.4.6=py39haa95532_0
   - comm=0.2.1=py39haa95532_0
   - contourpy=1.2.0=py39h59b6b97_0
+  - cpuonly=2.0=0
   - cycler=0.11.0=pyhd3eb1b0_0
   - debugpy=1.6.7=py39hd77b12b_0
   - decorator=5.1.1=pyhd3eb1b0_0
   - defusedxml=0.7.1=pyhd3eb1b0_0
   - exceptiongroup=1.2.0=py39haa95532_0
   - executing=0.8.3=pyhd3eb1b0_0
+  - filelock=3.13.1=py39haa95532_0
   - fonttools=4.51.0=py39h2bbff1b_0
   - freetype=2.12.1=ha860e81_0
+  - gmpy2=2.1.2=py39h7f96b67_0
   - icu=73.1=h6c2663c_0
   - idna=3.7=py39haa95532_0
   - importlib-metadata=7.0.1=py39haa95532_0
@@ -71,10 +75,12 @@ dependencies:
   - libbrotlienc=1.0.9=h2bbff1b_8
   - libclang13=14.0.6=default_h8e68704_1
   - libdeflate=1.17=h2bbff1b_1
+  - libjpeg-turbo=2.0.0=h196d8e1_0
   - libpng=1.6.39=h8cc25b3_0
   - libpq=12.17=h906ac69_0
   - libsodium=1.0.18=h62dcd97_0
   - libtiff=4.5.1=hd77b12b_0
+  - libuv=1.48.0=h827c3e9_0
   - libwebp-base=1.3.2=h2bbff1b_0
   - lz4-c=1.9.4=h2bbff1b_1
   - markupsafe=2.1.3=py39h2bbff1b_0
@@ -86,10 +92,15 @@ dependencies:
   - mkl-service=2.4.0=py39h2bbff1b_1
   - mkl_fft=1.3.8=py39h2bbff1b_0
   - mkl_random=1.2.4=py39h59b6b97_0
+  - mpc=1.1.0=h7edee0f_1
+  - mpfr=4.0.2=h62dcd97_1
+  - mpir=3.0.0=hec2e145_1
+  - mpmath=1.3.0=py39haa95532_0
   - nbclient=0.8.0=py39haa95532_0
   - nbconvert=7.10.0=py39haa95532_0
   - nbformat=5.9.2=py39haa95532_0
   - nest-asyncio=1.6.0=py39haa95532_0
+  - networkx=3.2.1=py39haa95532_0
   - notebook=7.0.8=py39haa95532_2
   - notebook-shim=0.2.3=py39haa95532_0
   - numpy=1.26.4=py39h055cbcc_0
@@ -120,6 +131,8 @@ dependencies:
   - python-dateutil=2.9.0post0=py39haa95532_2
   - python-fastjsonschema=2.16.2=py39haa95532_0
   - python-json-logger=2.0.7=py39haa95532_0
+  - pytorch=2.4.0=py3.9_cpu_0
+  - pytorch-mutex=1.0=cpu
   - pytz=2024.1=py39haa95532_0
   - pywin32=305=py39h2bbff1b_0
   - pywinpty=2.0.10=py39h5da7b33_0
@@ -141,10 +154,13 @@ dependencies:
   - soupsieve=2.5=py39haa95532_0
   - sqlite=3.45.3=h2bbff1b_0
   - stack_data=0.2.0=pyhd3eb1b0_0
+  - sympy=1.12=py39haa95532_0
   - tbb=2021.8.0=h59b6b97_0
   - terminado=0.17.1=py39haa95532_0
   - tinycss2=1.2.1=py39haa95532_0
   - tomli=2.0.1=py39haa95532_0
+  - torchaudio=2.4.0=py39_cpu
+  - torchvision=0.19.0=py39_cpu
   - tornado=6.4.1=py39h827c3e9_0
   - traitlets=5.14.3=py39haa95532_0
   - typing-extensions=4.11.0=py39haa95532_0
@@ -198,6 +214,7 @@ dependencies:
     - protobuf==4.25.3
     - pyasn1==0.6.0
     - pyasn1-modules==0.4.0
+    - pywavelets==1.5.0
     - requests-oauthlib==2.0.0
     - rich==13.7.1
     - rsa==4.9
@@ -215,4 +232,4 @@ dependencies:
     - tzdata==2024.1
     - werkzeug==3.0.3
     - wrapt==1.14.1
-prefix: C:\Users\chell\anaconda3\envs\110SPMenv
+prefix: C:\Users\chell\anaconda3\envs\110SPMEnv
