@@ -22,7 +22,7 @@
 - 自定义的由离散离散小波变换原理构成的[小波卷积层DWTCNN](./ModelsContrast/110spmdwtcnnlstm.ipynb)
 
 ### 4.未完成事项
-
+- EMD的个人理解版本2；
 - - EEMD的个人理解；
 - - CEEMDAN的个人理解;
 - - CEEMD的个人理解;
@@ -32,9 +32,10 @@
 - - RLMD的个人理解;
 - - Go_emd的个人理解;
 
+- VMD的个人理解版本2；
 
-- FT的个人理解；
-- - CWT的个人理解版本2(在ClassifyMill的改版)
+- FFT的个人理解版本2；
+- - CWT的个人理解版本2
 - - DWT的个人理解；
 
 - CWTCNN卷积层的构建；
