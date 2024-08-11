@@ -20,17 +20,17 @@
 
 ### 3.突出点
 - 自定义的由离散离散小波变换原理构成的[小波卷积层DWTCNN](./ModelsContrast/110spmdwtcnnlstm.ipynb)
+- [EEMD的个人理解；](./DecompositionContrast/EMD/EEMD/EEMD.md)
+
 
 ### 4.未完成事项
 
-- - EEMD的个人理解；
-- - CEEMDAN的个人理解;
-- - CEEMD的个人理解;
-- - FCEEMD的个人理解;
-- - ICEEMDAN的个人理解;
-- - LMD的个人理解;
-- - RLMD的个人理解;
-- - Go_emd的个人理解;
+- CEEMDAN的个人理解;
+- FCEEMD的个人理解;
+- ICEEMDAN的个人理解;
+- LMD的个人理解;
+- RLMD的个人理解;
+- Go_emd的个人理解;
 
 
 - FT的个人理解；
@@ -39,4 +39,5 @@
 
 - CWTCNN卷积层的构建；
 - KANs框架的构建；
+- TFN的复现
 - 再梳理一下论文，看看要学的部分；
