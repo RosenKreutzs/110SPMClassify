@@ -25,13 +25,10 @@
 - [CEEMDAN的个人理解；](./DecompositionContrast/EMD/CEEMDAN/CEEMDAN.md)
 - [ICEEMDAN的个人理解；](./DecompositionContrast/EMD/ICEEMDAN/ICEEMDAN.md)
 - [Go_EMD的个人理解；](./DecompositionContrast/EMD/Go_EMD/Go_EMD.md)
-
+- [LMD的个人理解；](./DecompositionContrast/EMD/LMD/LMD.md)
+- [RLMD的个人理解；](./DecompositionContrast/EMD/RLMD/RLMD.md)
 
 ### 4.未完成事项
-
-- LMD的个人理解;
-- RLMD的个人理解;
-
 
 - FT的个人理解；
 - - CWT的个人理解版本2(在ClassifyMill的改版)
