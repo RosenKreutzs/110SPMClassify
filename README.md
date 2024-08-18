@@ -27,12 +27,8 @@
 - [Go_EMD的个人理解；](./DecompositionContrast/EMD/Go_EMD/Go_EMD.md)
 - [LMD的个人理解；](./DecompositionContrast/EMD/LMD/LMD.md)
 - [RLMD的个人理解；](./DecompositionContrast/EMD/RLMD/RLMD.md)
-
+- [FT的个人理解；](./DecompositionContrast/FT/FT/FT.md)
 ### 4.未完成事项
-
-- FT的个人理解；
-- - CWT的个人理解版本2(在ClassifyMill的改版)
-- - DWT的个人理解；
 
 - CWTCNN卷积层的构建；
 - 探究一下奇异值分解构建自定义层的可实现性；
